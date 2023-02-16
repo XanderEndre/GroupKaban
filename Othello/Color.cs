@@ -8,6 +8,9 @@ namespace Othello
 {
     enum Piece
     {
-        Black,White,Empty
+        BLACK,
+        WHITE,
+        EMPTY,
+        POSSIBLE_MOVE
     }
 }
