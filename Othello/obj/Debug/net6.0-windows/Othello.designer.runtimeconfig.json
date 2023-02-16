@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\Cynthia\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Cynthia\\.nuget\\packages",
+      "C:\\Users\\Emile Randolph\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Emile Randolph\\.nuget\\packages",
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ],
     "configProperties": {
