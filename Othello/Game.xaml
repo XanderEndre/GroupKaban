@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Othello"
         mc:Ignorable="d"
         Title="Othello" Height="500" Width="800">
-    <Grid x:Name="grid" Margin="200,40,25,40" ShowGridLines="True" Background="DarkGreen">
+    <Grid x:Name="grid" Margin="25,25" ShowGridLines="True" Background="DarkGreen">
         <Grid>
             <TextBlock x:Name="turn" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" />
             <TextBlock x:Name="score" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" />
