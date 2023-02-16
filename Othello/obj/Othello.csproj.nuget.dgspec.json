@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Xander\\workspace\\Visual Studio\\Othello\\Othello\\Othello.csproj": {}
+    "C:\\Users\\Rosy Gonzalez\\IdeaProjects\\GitStuff\\csc130\\GroupKaban\\Othello\\Othello.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Xander\\workspace\\Visual Studio\\Othello\\Othello\\Othello.csproj": {
+    "C:\\Users\\Rosy Gonzalez\\IdeaProjects\\GitStuff\\csc130\\GroupKaban\\Othello\\Othello.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Xander\\workspace\\Visual Studio\\Othello\\Othello\\Othello.csproj",
+        "projectUniqueName": "C:\\Users\\Rosy Gonzalez\\IdeaProjects\\GitStuff\\csc130\\GroupKaban\\Othello\\Othello.csproj",
         "projectName": "Othello",
-        "projectPath": "C:\\Users\\Xander\\workspace\\Visual Studio\\Othello\\Othello\\Othello.csproj",
-        "packagesPath": "C:\\Users\\Xander\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Xander\\workspace\\Visual Studio\\Othello\\Othello\\obj\\",
+        "projectPath": "C:\\Users\\Rosy Gonzalez\\IdeaProjects\\GitStuff\\csc130\\GroupKaban\\Othello\\Othello.csproj",
+        "packagesPath": "C:\\Users\\Rosy Gonzalez\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rosy Gonzalez\\IdeaProjects\\GitStuff\\csc130\\GroupKaban\\Othello\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Xander\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rosy Gonzalez\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
