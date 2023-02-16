@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Media;
 
 namespace Othello
 {
-    class Board
+    class Tile
     {
-        public Tile[,] 
-
+        public bool isTileBlack { get; set; }
+        public void FlipTile() { isTileBlack = !isTileBlack; }
     }
 }
