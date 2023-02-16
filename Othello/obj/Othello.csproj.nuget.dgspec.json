@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Xander\\workspace\\Visual Studio\\Othello\\Othello\\Othello.csproj": {}
+    "C:\\A Neumont\\Year2\\Q2\\Principles of Software Engineering\\Kaban\\Othello\\Othello.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Xander\\workspace\\Visual Studio\\Othello\\Othello\\Othello.csproj": {
+    "C:\\A Neumont\\Year2\\Q2\\Principles of Software Engineering\\Kaban\\Othello\\Othello.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Xander\\workspace\\Visual Studio\\Othello\\Othello\\Othello.csproj",
+        "projectUniqueName": "C:\\A Neumont\\Year2\\Q2\\Principles of Software Engineering\\Kaban\\Othello\\Othello.csproj",
         "projectName": "Othello",
-        "projectPath": "C:\\Users\\Xander\\workspace\\Visual Studio\\Othello\\Othello\\Othello.csproj",
-        "packagesPath": "C:\\Users\\Xander\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Xander\\workspace\\Visual Studio\\Othello\\Othello\\obj\\",
+        "projectPath": "C:\\A Neumont\\Year2\\Q2\\Principles of Software Engineering\\Kaban\\Othello\\Othello.csproj",
+        "packagesPath": "C:\\Users\\Emile Randolph\\.nuget\\packages\\",
+        "outputPath": "C:\\A Neumont\\Year2\\Q2\\Principles of Software Engineering\\Kaban\\Othello\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Xander\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Emile Randolph\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
