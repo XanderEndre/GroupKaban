@@ -77,7 +77,7 @@ namespace Othello {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Othello;component/game.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Othello;V1.0.0.0;component/game.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Game.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
