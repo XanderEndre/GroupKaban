@@ -1,15 +1,34 @@
-﻿<Window x:Class="Othello.Menu"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Othello"
-        mc:Ignorable="d"
-        Title="Menu" Height="400" Width="650">
+﻿<Window
+    x:Class="Othello.Menu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Othello"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Menu"
+    Width="650"
+    Height="400"
+    mc:Ignorable="d">
     <Grid>
-        <Label Name="menuTitle" Content="OTHELLO!!!" FontSize="25" Height="52" HorizontalAlignment="Center" Margin="0,37,0,295"/>
-        <ComboBox Name="gameType" Height="27" Width="249" Margin="201,205,200,152">            
-        </ComboBox>
-        <Button Name="btnStartGame" Content="Play" Click="btnUpdateSource_Click" Height="24" Width="91" Margin="280,287,280,73"/>
+        <Label
+            Name="menuTitle"
+            Height="52"
+            Margin="0,37,0,295"
+            HorizontalAlignment="Center"
+            Content="OTHELLO!!!"
+            FontSize="25" />
+        <ComboBox
+            Name="gameType"
+            Width="249"
+            Height="27"
+            Margin="201,205,200,152" />
+        <Button
+            Name="btnStartGame"
+            Width="91"
+            Height="24"
+            Margin="280,287,280,73"
+            Click="btnUpdateSource_Click"
+            Content="Play" />
     </Grid>
 </Window>
+
