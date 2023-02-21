@@ -20,9 +20,55 @@ namespace Othello
     /// </summary>
     public partial class MainWindow : Window
     {
+        private int BOARD_ROWS = 8;
+        private int BOARD_COLS = 8;
+        Grid board;
+
         public MainWindow()
         {
             InitializeComponent();
+            CreateBoard();
+        }
+
+ 
+
+        public void CreateBoard()
+        {
+            // Initialize the board
+            board = new Grid();
+
+            // Add Rows
+            for(int row = 0; row < BOARD_ROWS; row++)
+            {
+                RowDefinition rowDefinition = new RowDefinition();
+                board.RowDefinitions.Add(rowDefinition);
+            }
+
+            // Add Columns
+            for(int col = 0; col < BOARD_COLS; col++)
+            {
+                ColumnDefinition columnDefinition = new ColumnDefinition();
+                board.ColumnDefinitions.Add(columnDefinition);
+            }
+
+            // Add an image element to each cell!
+            for(int row = 0; row < BOARD_ROWS; row++)
+            {
+                for(int col = 0; col < BOARD_COLS; col++)
+                {
+                    Image image = new Image();
+                    image.Source = new BitmapImage();
+                    Grid.SetRow(image, row);
+                    Grid.SetColumn(image, col);
+                    board.Children.Add(image);
+                }
+            }
+
+            // Show the Grid Lines
+            board.ShowGridLines = true;
+            
+            // Initalize the default
+        
         }
     }
 }

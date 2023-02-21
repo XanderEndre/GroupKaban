@@ -8,23 +8,23 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Emile Randolph\\.nuget\\packages\\": {},
+    "C:\\Users\\Xander\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\A Neumont\\Year2\\Q2\\Principles of Software Engineering\\Kaban\\Othello\\Othello.csproj",
+      "projectUniqueName": "C:\\Users\\Xander\\workspace\\Visual Studio\\Othello\\Othello\\Othello.csproj",
       "projectName": "Othello",
-      "projectPath": "C:\\A Neumont\\Year2\\Q2\\Principles of Software Engineering\\Kaban\\Othello\\Othello.csproj",
-      "packagesPath": "C:\\Users\\Emile Randolph\\.nuget\\packages\\",
-      "outputPath": "C:\\A Neumont\\Year2\\Q2\\Principles of Software Engineering\\Kaban\\Othello\\obj\\",
+      "projectPath": "C:\\Users\\Xander\\workspace\\Visual Studio\\Othello\\Othello\\Othello.csproj",
+      "packagesPath": "C:\\Users\\Xander\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Xander\\workspace\\Visual Studio\\Othello\\Othello\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Emile Randolph\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Xander\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
