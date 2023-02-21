@@ -22,6 +22,9 @@ namespace Othello
         public Game()
         {
             InitializeComponent();
+          
         }
+
+        
     }
 }
