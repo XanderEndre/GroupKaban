@@ -12,12 +12,19 @@
     <Window.Background>
         <ImageBrush ImageSource="resources/othello.png" Opacity="0.5" />
     </Window.Background>
-    <Grid>
-        <Label
+    <Grid Margin="10,0,10,-6">
+        <GroupBox
             Name="menuTitle"
-            Margin="69,24,212,305"
+            Width="309"
+            Margin="0,0,0,341"
+            VerticalAlignment="Bottom"
+            Background="Black"
             Content="OTHELLO!!!"
-            FontSize="25" />
+            FontSize="25"
+            Foreground="White"
+            IsEnabled="False"
+            Opacity="0.65" />
+
         <ComboBox
             Name="gameType"
             Width="249"
