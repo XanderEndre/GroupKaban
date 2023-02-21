@@ -9,12 +9,13 @@
     Width="650"
     Height="400"
     mc:Ignorable="d">
+    <Window.Background>
+        <ImageBrush ImageSource="resources/othello.png" Opacity="0.5" />
+    </Window.Background>
     <Grid>
         <Label
             Name="menuTitle"
-            Height="52"
-            Margin="0,37,0,295"
-            HorizontalAlignment="Center"
+            Margin="69,24,212,305"
             Content="OTHELLO!!!"
             FontSize="25" />
         <ComboBox
