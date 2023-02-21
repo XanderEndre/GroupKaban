@@ -9,7 +9,7 @@ namespace Othello
     class Player
     {
         private String name;
-        private Piece colour;
+        private Tile colour;
         public void TakeTurn() {
             
         }
@@ -19,12 +19,12 @@ namespace Othello
         public void SetName(String name) {
             this.name = name;
         }
-        public void SetColour(Piece colour)
+        public void SetColour(Tile colour)
         {
             this.colour = colour;
         }
-        public Piece GetColour() { 
-            return new Piece();
+        public Tile GetColour() { 
+            return new Tile();
         }
 
     }
