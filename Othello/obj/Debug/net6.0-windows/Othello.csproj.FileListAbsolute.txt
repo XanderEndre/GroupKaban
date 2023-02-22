@@ -1,0 +1,7 @@
+C:\Users\Rosy Gonzalez\IdeaProjects\GitStuff\csc130\GroupKaban\Othello\obj\Debug\net6.0-windows\Othello.csproj.AssemblyReference.cache
+C:\Users\Rosy Gonzalez\IdeaProjects\GitStuff\csc130\GroupKaban\Othello\obj\Debug\net6.0-windows\Game.g.cs
+C:\Users\Rosy Gonzalez\IdeaProjects\GitStuff\csc130\GroupKaban\Othello\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Rosy Gonzalez\IdeaProjects\GitStuff\csc130\GroupKaban\Othello\obj\Debug\net6.0-windows\Menu.g.cs
+C:\Users\Rosy Gonzalez\IdeaProjects\GitStuff\csc130\GroupKaban\Othello\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Rosy Gonzalez\IdeaProjects\GitStuff\csc130\GroupKaban\Othello\obj\Debug\net6.0-windows\Othello_MarkupCompile.cache
+C:\Users\Rosy Gonzalez\IdeaProjects\GitStuff\csc130\GroupKaban\Othello\obj\Debug\net6.0-windows\Othello_MarkupCompile.lref
