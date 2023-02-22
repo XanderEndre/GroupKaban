@@ -16,25 +16,22 @@
         <GroupBox
             Name="menuTitle"
             Width="309"
-            Margin="0,0,0,341"
-            VerticalAlignment="Bottom"
+            Margin="160,23,160,0"
+            VerticalAlignment="Top"
             Background="Black"
             Content="OTHELLO!!!"
             FontSize="25"
             Foreground="White"
-            IsEnabled="False"
             Opacity="0.65" />
 
         <ComboBox
             Name="gameType"
-            Width="249"
             Height="27"
-            Margin="201,205,200,152" />
+            Margin="201,208,192,155" />
         <Button
             Name="btnStartGame"
-            Width="91"
             Height="24"
-            Margin="280,287,280,73"
+            Margin="280,290,254,76"
             Click="btnUpdateSource_Click"
             Content="Play" />
     </Grid>
