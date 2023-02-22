@@ -26,16 +26,16 @@ namespace Othello
 
         public MainWindow()
         {
+            board = new Grid();
             InitializeComponent();
-            CreateBoard();
+            Content = CreateBoard(board);
         }
 
  
-
-        public void CreateBoard()
+        public Grid CreateBoard(Grid board)
         {
             // Initialize the board
-            board = new Grid();
+           
 
             // Add Rows
             for(int row = 0; row < BOARD_ROWS; row++)
@@ -51,10 +51,10 @@ namespace Othello
                 board.ColumnDefinitions.Add(columnDefinition);
             }
 
-            // Add an image element to each cell!
-            for(int row = 0; row < BOARD_ROWS; row++)
+            //// Add an image element to each cell!
+            for (int row = 0; row < BOARD_ROWS; row++)
             {
-                for(int col = 0; col < BOARD_COLS; col++)
+                for (int col = 0; col < BOARD_COLS; col++)
                 {
                     Image image = new Image();
                     image.Source = new BitmapImage();
@@ -66,9 +66,10 @@ namespace Othello
 
             // Show the Grid Lines
             board.ShowGridLines = true;
-            
+
             // Initalize the default
-        
+
+            return board;
         }
     }
 }
