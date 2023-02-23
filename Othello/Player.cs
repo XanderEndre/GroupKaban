@@ -24,7 +24,7 @@ namespace Othello
             this.colour = colour;
         }
         public Tile GetColour() { 
-            return new Tile();
+            return new Tile(true);
         }
 
     }

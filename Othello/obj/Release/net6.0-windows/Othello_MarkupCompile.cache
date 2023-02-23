@@ -1,20 +1,20 @@
 ﻿Othello
-1.0.0.0
+
 
 winexe
 C#
 .cs
-C:\Users\Rosy Gonzalez\IdeaProjects\GitStuff\csc130\GroupKaban\Othello\obj\Debug\net6.0-windows\
+C:\Users\Rosy Gonzalez\IdeaProjects\GitStuff\csc130\GroupKaban\Othello\obj\Release\net6.0-windows\
 Othello
 none
 false
-TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+TRACE;RELEASE;NET;NET6_0;NETCOREAPP
 C:\Users\Rosy Gonzalez\IdeaProjects\GitStuff\csc130\GroupKaban\Othello\App.xaml
 3-1345771539
 
-14-87387115
+5-117998249
 194-1797456590
 Game.xaml;MainWindow.xaml;Menu.xaml;
 
-False
+True
 

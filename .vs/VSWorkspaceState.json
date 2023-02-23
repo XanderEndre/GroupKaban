@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Othello"
   ],
+  "SelectedNode": "\\Othello\\Game.xaml",
   "PreviewInSolutionExplorer": false
 }
