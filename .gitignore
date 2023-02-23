@@ -399,3 +399,6 @@ FodyWeavers.xsd
 *.cache
 *.editorconfig
 *.cache
+Othello/obj/Debug/net6.0-windows/Othello_MarkupCompile.i.cache
+*.cache
+*.editorconfig
