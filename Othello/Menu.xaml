@@ -28,12 +28,7 @@
             Name="gameType"
             Height="27"
             Margin="201,208,192,155" />
-        <Button
-            Name="btnStartGame"
-            Height="24"
-            Margin="280,290,254,76"
-            Click="btnUpdateSource_Click"
-            Content="Play" />
+
     </Grid>
 </Window>
 

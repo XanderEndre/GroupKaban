@@ -23,5 +23,10 @@ namespace Othello
         {
             InitializeComponent();
         }
+
+        private void btnUpdateSource_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
