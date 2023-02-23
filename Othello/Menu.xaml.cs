@@ -22,6 +22,7 @@ namespace Othello
         public Menu()
         {
             InitializeComponent();
+            this.DataContext = this;
         }
 
         private void btnUpdateSource_Click(object sender, RoutedEventArgs e)
