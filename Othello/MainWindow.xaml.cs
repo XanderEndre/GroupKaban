@@ -61,7 +61,7 @@ namespace Othello
                 for (int col = 0; col < BOARD_COLS; col++)
                 {
                     Image image = new Image();
-                    image.Source = new BitmapImage();
+                    image.Source = new BitmapImage(new Uri("empty-circle.png", System.UriKind.Relative));
                     Grid.SetRow(image, row);
                     Grid.SetColumn(image, col);
                     board.Children.Add(image);
