@@ -8,10 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="resources\black-circle.png" />
+    <None Remove="resources\blue-circle.png" />
     <None Remove="resources\empty-circle.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="resources\black-circle.png" />
+    <Resource Include="resources\blue-circle.png" />
     <Resource Include="resources\empty-circle.png" />
   </ItemGroup>
 

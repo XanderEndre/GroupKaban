@@ -31,5 +31,7 @@
             <ColumnDefinition />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
+
+        <!--<Image Grid.Column="1" Grid.Row="1" Source="resources/empty-circle.png" />-->
     </Grid>
 </Window>
