@@ -49,8 +49,8 @@ namespace Othello
             gameGrid.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(1, GridUnitType.Star) });
 
             // Create the label and add it to the first row
- 
-            turnLabel.Content =  playerList[playerTurn].name + "'s turn";
+
+            turnLabel.Content = playerList[playerTurn].name + "'s turn";
             turnLabel.HorizontalAlignment = HorizontalAlignment.Center;
             turnLabel.VerticalAlignment = VerticalAlignment.Center;
             gameGrid.Children.Add(turnLabel);
@@ -77,8 +77,13 @@ namespace Othello
             // Add the new grid to the main window's content
             rootGrid.Children.Add(gameGrid);
 
-            UpdateBoard(board);
 
+            char playerChar = playerList[playerTurn].character;
+            char opponentChar = playerList[(playerTurn + 1) % playerList.Count].character;
+
+            UpdateBoard(board);
+            ShowPotentialMoves(playerChar, opponentChar);
+            UpdateBoard(board);
 
         }
 
@@ -153,19 +158,144 @@ namespace Othello
             int row = Grid.GetRow(border);
             int col = Grid.GetColumn(border);
 
-            if (gameBoard[row, col].Equals(' '))
+            char playerChar = playerList[playerTurn].character;
+            char opponentChar = playerList[(playerTurn + 1) % playerList.Count].character;
+
+            ShowPotentialMoves(playerChar, opponentChar);
+
+
+            // Check if the selected cell is a valid move
+            if (IsValidMove(row, col, playerChar, opponentChar))
             {
-                gameBoard[row, col] = playerList[playerTurn].character;
+                // Place the player's piece on the selected cell
+                gameBoard[row, col] = playerChar;
+
+                // Flip opponent's pieces in each direction
+                FlipPieces(row, col, playerChar, opponentChar);
+
+                // Switch to the next player's turn
+                playerTurn = (playerTurn + 1) % playerList.Count;
+                turnLabel.Content = playerList[playerTurn].name + "'s turn";
+
+                // RESET THE BOARD
+                for (int r = 0; r < BOARD_ROWS; r++)
+                {
+                    for (int c = 0; c < BOARD_COLS; c++)
+                    {
+                        if (gameBoard[r, c] == 'A')
+                        {
+                            // Check if this empty cell is a valid move for the current player
+                            if (IsValidMove(r, c, playerChar, opponentChar))
+                            {
+                                // Mark this cell as a potential move by highlighting it or displaying a marker on it
+                                HighlightCell(r, c, ' ');
+                            }
+                        }
+                    }
+                }
+
+                
+                // Update the game board graphics
+                UpdateBoard(board);
+            }
+        }
+
+
+        private void ShowPotentialMoves(char playerChar, char opponentChar)
+        {
+            for (int r = 0; r < BOARD_ROWS; r++)
+            {
+                for (int c = 0; c < BOARD_COLS; c++)
+                {
+                    if (gameBoard[r, c] == ' ')
+                    {
+                        // Check if this empty cell is a valid move for the current player
+                        if (IsValidMove(r, c, playerChar, opponentChar))
+                        {
+                            // Mark this cell as a potential move by highlighting it or displaying a marker on it
+                            HighlightCell(r, c, 'A');
+                        }
+                    }
+                }
+            }
+        }
+
+
+        private void HighlightCell(int row, int col, char newPieceType)
+        {
+            gameBoard[row, col] = newPieceType;
+            UpdateBoard(board);
+        }
+
+        // Check if the specified cell is a valid move for the given player
+        private bool IsValidMove(int row, int col, char playerChar, char opponentChar)
+        {
+            // Check if the cell is already occupied
+            if (gameBoard[row, col] != ' ' && gameBoard[row, col] != 'A') return false;
+
+
+            // Check each direction for available flips
+            for (int dr = -1; dr <= 1; dr++)
+            {
+                for (int dc = -1; dc <= 1; dc++)
+                {
+                    // Ignore the current cell
+                    if (dr == 0 && dc == 0) continue;
+
+                    // Check for valid flips in this direction
+                    int r = row + dr, c = col + dc;
+                    bool foundOpponent = false;
+                    while (r >= 0 && r < BOARD_ROWS && c >= 0 && c < BOARD_COLS && gameBoard[r, c] == opponentChar)
+                    {
+                        r += dr;
+                        c += dc;
+                        foundOpponent = true;
+                    }
+                    if (foundOpponent && r >= 0 && r < BOARD_ROWS && c >= 0 && c < BOARD_COLS && gameBoard[r, c] == playerChar)
+                    {
+                        return true;
+                    }
+                }
             }
 
-            if (++playerTurn == playerList.Count) playerTurn = 0;
 
-            turnLabel.Content = playerList[playerTurn].name + "'s turn";
+            // No valid moves were found
+            return false;
+        }
 
-            UpdateBoard(board);
+        // Flip opponent's pieces in each direction
+        private void FlipPieces(int row, int col, char playerChar, char opponentChar)
+        {
+            for (int dr = -1; dr <= 1; dr++)
+            {
+                for (int dc = -1; dc <= 1; dc++)
+                {
+                    // Ignore the current cell
+                    if (dr == 0 && dc == 0) continue;
 
-            // Do something with the clicked cell
-            Debug.WriteLine("Cell clicked: row={0}, col={1}", row, col);
+                    // Check for valid flips in this direction
+                    int r = row + dr, c = col + dc;
+                    bool foundOpponent = false;
+                    while (r >= 0 && r < BOARD_ROWS && c >= 0 && c < BOARD_COLS && gameBoard[r, c] == opponentChar)
+                    {
+                        r += dr;
+                        c += dc;
+                        foundOpponent = true;
+                    }
+                    if (foundOpponent && r >= 0 && r < BOARD_ROWS && c >= 0 && c < BOARD_COLS && gameBoard[r, c] == playerChar)
+                    {
+                        // Flip the pieces in this direction
+                        r = row + dr;
+                        c = col + dc;
+                        while (gameBoard[r, c] == opponentChar)
+                        {
+                            gameBoard[r, c] = playerChar;
+                            r += dr;
+                            c += dc;
+                        }
+                    }
+                }
+            }
         }
 
         private void UpdateBoard(Grid board)
@@ -192,6 +322,10 @@ namespace Othello
                     {
                         image.Source = new BitmapImage(new Uri("resources/blue-circle.png", System.UriKind.Relative)); // Use your own image file here
                     }
+                    else if (gameBoard[row, col] == 'A')
+                    {
+                        image.Source = new BitmapImage(new Uri("resources/grey-circle.png", System.UriKind.Relative)); // Use your own image file here
+                    }
                     // The gameboard has it registered as a null space
                     else
                     {
@@ -200,10 +334,5 @@ namespace Othello
                 }
             }
         }
-
-
-
     }
-
-
 }
