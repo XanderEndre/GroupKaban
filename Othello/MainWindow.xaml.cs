@@ -334,5 +334,27 @@ namespace Othello
                 }
             }
         }
+        
+        private char CheckForWin() {
+            int playerOneCount = 0;
+			int playerTwoCount = 0;
+            // Check all board positions
+			for (int r = 0; r < BOARD_ROWS; r++) {
+				for (int c = 0; c < BOARD_COLS; c++) {
+                    // If a position is empty the game is not over
+                    // Returns a space
+                    if (gameBoard[r, c] == '\0' || gameBoard[r, c] == 'A') {
+                        return ' ';
+                    // Counts the number of spaces with each character
+                    } else if (gameBoard[r, c] == playerList[0].character) {
+                        playerOneCount++;
+                    } else if (gameBoard[r, c] == playerList[1].character) {
+                        playerTwoCount++;
+                    }
+				}
+			}
+            // Returns the character of the player that won
+            return playerOneCount > playerTwoCount ? playerList[0].character : playerList[1].character;
+		}
     }
 }
